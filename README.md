@@ -43,4 +43,26 @@ Repo for Highly Loaded Distributed Systems labs
 - cd Lab1_Docker/Task5 - go into right directory
 - cat query_results.txt - check file content
 
+## Lab 2 - Jmeter
 
+- task1.jmx - task1.csv as a result
+- task2.jmx - task2.csv as a result
+- task3.jmx - task3.csv as a result
+- task4.jmx - task4-1.csv as a result
+
+## Lab 4 - Hadoop
+
+- Hadoop_screenshots.pdf - protocol
+- ProcessUnits.java - fixed Java code
+- result.txt - results of requests (step 10)
+- sample.txt - input data for requests 
+
+## Lab 5 - Spark
+
+1. Correctly install spark (https://phoenixnap.com/kb/install-spark-on-ubuntu)
+2. start-master.sh --webui-port 8001 - start spark locally on 8001 port
+3. apt install python3-pip - install it to work with python requirements efficiently
+4. pip3 install -r requirements.txt - install all requirements via pip
+5. download London.csv
+6. spark-submit data_generation.py - generate data via spark
+7. spark-submit main.py - execute main file via spark
