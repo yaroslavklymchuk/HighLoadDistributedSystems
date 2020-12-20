@@ -50,6 +50,17 @@ Repo for Highly Loaded Distributed Systems labs
 - task3.jmx - task3.csv as a result
 - task4.jmx - task4-1.csv as a result
 
+## Lab 3 - Mongo
+
+- docker-compose up -d - start docker containers in detached mode
+- sudo sh init_rs.sh - execute bash script
+- (wait several seconds)
+- docker-compose exec router01 sh -c “mongo < .scripts/init-router.js” - start bash script with mongo inside docker-container
+- run all generate_data.ipynb - run it to generate additional data
+- cp mongo_lab/rides.csv mongo_lab/data/
+- sudo sh import_and_query_data.sh
+- docker-compose down -v --rmi all --remove-orphans - stop docker containers
+
 ## Lab 4 - Hadoop
 
 - Hadoop_screenshots.pdf - protocol
